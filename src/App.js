@@ -2,23 +2,26 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaUser, FaBriefcase, FaProjectDiagram } from "react-icons/fa";
 import './App.css'
-import About from "./pages/About";
+import HomeAbout from "./pages/HomeAbout";
 import ExperiencePage from "./pages/Experience";
 import ProjectPage from "./pages/Projects";
+import SkillPage from "./pages/Skills"
 
 function App() {
   const [currentPage, setCurrentPage] = useState("about");
 
   const renderPage = () => {
     switch (currentPage) {
-      case "about":
-        return <About />;
+      case "homeAbout":
+        return <HomeAbout />;
       case "experience":
         return <ExperiencePage />;
       case "projects":
         return <ProjectPage />;
+      case "skills":
+        return <SkillPage />;
       default:
-        return <About />;
+        return <HomeAbout />;
     }
   };
 
@@ -42,7 +45,7 @@ function App() {
       <div className="footer">
         <div className="footer-box">
           <button
-            className={`icon-button ${currentPage === "about" ? "active" : ""}`}
+            className={`icon-button ${currentPage === "homeAbout" ? "active" : ""}`}
             onClick={() => handlePageChange("about")}
           >
             <FaUser />
@@ -52,6 +55,12 @@ function App() {
             onClick={() => handlePageChange("experience")}
           >
             <FaBriefcase />
+          </button>
+          <button
+            className={`icon-button ${currentPage === "skills" ? "active" : ""}`}
+            onClick={() => handlePageChange("skills")}
+          >
+            <FaProjectDiagram />
           </button>
           <button
             className={`icon-button ${currentPage === "projects" ? "active" : ""}`}
