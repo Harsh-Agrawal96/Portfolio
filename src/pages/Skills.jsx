@@ -13,7 +13,10 @@ const SkillPage = () => {
 
   return (
     <div className="skill-page">
-      <h2 className="section-title">Skills</h2>
+      <h2 className="left-heading">
+        <span className="head-color">Skills </span>
+        I learn
+      </h2>
       <div className="skills-grid">
         <IconDiv
           name="HTML"
@@ -97,7 +100,10 @@ const SkillPage = () => {
         />
       </div>
 
-      <h2 className="section-title">Development Tools</h2>
+      <h2 className="left-heading">
+        <span className="head-color">Tools </span>
+        I uses
+      </h2>
       <div className="dev-tools-container">
         <div className="dev-tools-row" ref={scrollRef}>
 

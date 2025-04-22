@@ -6,6 +6,7 @@ import HomeAbout from "./pages/HomeAbout";
 import ExperiencePage from "./pages/Experience";
 import ProjectPage from "./pages/Projects";
 import SkillPage from "./pages/Skills"
+import NavBar from "./components/Navbar";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("about");
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <div className="app">
+      <NavBar />
       <AnimatePresence mode="wait">
         <motion.div
           key={currentPage}

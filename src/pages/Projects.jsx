@@ -3,41 +3,22 @@ import "../public/css/ProjectPage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import image1 from "../public/images/flashcard.png"
-import image2 from "../public/images/doctorBooking.png"
+import { Projects } from "../Data/ProjectData";
 
-const projects = [
-  {
-    id: 1,
-    image: image1,
-    title: "Flashcard learning app",
-    description: [
-      "This is the first paragraph desaksfnfjlaskdfj lasdjfaisdljf iasjfd ailjwfi asndfiowaj fiawu9f sjioasdf noij cribing Project 1, highlighting its key features.",
-      "Here is the second paragraph explaining the challenges faced and solutions implemented.",
-    ],
-    techStack: "React, Node.js, MongoDB",
-    liveLink: "https://example.com/live1",
-    repoLink: "https://github.com/example/repo1",
-  },
-  {
-    id: 2,
-    image: image2,
-    title: "Project 2",
-    description: [
-      "Project 2 is focused on delivering unique functionalities to improve user experience.",
-      "This paragraph elaborates on how innovative approaches were applied in Project 2."
-    ],
-    techStack: "Vue, Express, MySQL",
-    liveLink: "https://example.com/live2",
-    repoLink: "https://github.com/example/repo2",
-  }
-];
+
 
 const ProjectPage = () => {
 
   return (
     <div className="project-page">
-      {projects.map((project) => (
+      
+      <h1 className="left-heading">
+        My 
+        <span className="head-color"> Projects </span>
+      </h1>
+
+
+      {Projects.map((project) => (
         <div className="project-card" key={project.id}>
           <div className="project-image">
             <img src={project.image} alt={project.title} />

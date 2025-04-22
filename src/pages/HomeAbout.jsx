@@ -1,7 +1,8 @@
 
 import React from "react";
 import "../public/css/Home.css";
-import homeLogo from "./home-main.svg";
+import homeLogo from "./first.svg";
+import otherlogo from "./second.svg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Typewriter } from 'react-simple-typewriter';
@@ -13,7 +14,7 @@ const HomeAbout = () => {
     <div className="home-about-container">
 
       {/* Intro Section */}
-      <section className="info-section">
+      <section className="intro-section">
         <div className="intro-text">
           <p>
             Hi There!{" "}
@@ -24,15 +25,17 @@ const HomeAbout = () => {
 
           <p>
             I'M
-            <strong className="main-name"> HARSH AGRAWAL</strong>
+            <strong className="main-text"> HARSH AGRAWAL</strong>
           </p>
 
-          <div style={{ paddingTop: 20, textAlign: "left" }}>
-            <h2 style={{ fontSize: "2rem", fontWeight: "bold", color: "#64ffda" }}>
-              A{' '}
-              <span style={{ color: "#fff", fontWeight: 'bold' }}>
+          <div className="writer" style={{ paddingTop: 20, textAlign: "left" }}>
+            <h2 style={{ fontWeight: "inherit" }}>
+              A Software Developer
+              <br />
+              You can talk me about{' '}
+              <span style={{ color: "#64ffda", fontWeight: 'bold' }}>
                 <Typewriter
-                  words={['Software Developer', 'Blockchain Developer', 'Full Stack Developer']}
+                  words={['HTML', 'CSS', 'JavaScript', 'React']}
                   loop={true}
                   cursor
                   cursorStyle='|'
@@ -44,23 +47,36 @@ const HomeAbout = () => {
             </h2>
           </div>
         </div>
-        <div className="intro-image">
-          <img src={homeLogo} alt="Developer Illustration" />
+        <div className="intro-image" style={{
+          display:"flex",
+          width:"50%",
+          padding:"3%",
+          }} >
+          <div className="intro-innerdiv">
+            <img src={homeLogo} alt="Developer Illustration" />
+          </div>
         </div>
       </section>
 
       {/* About Me Section */}
-      <section className="info-section">
-        <div className="info-image">
-          <img src={homeLogo} alt="Developer Illustration" />
+      <section className="intro-section info-section">
+        <div className="info-image" style={{
+          display:"flex",
+          width:"35%"
+          }} >
+          <div className="info-innerdiv">
+            <img src={otherlogo} alt="Developer Illustration" />
+          </div>
         </div>
-        <div className="about-text">
+        <div className="info-text" style={{
+          width:"60%"
+        }} >
 
           <h1 style={{ fontSize: "2.6em" }}>
             LET ME <span className="purple"> INTRODUCE </span> MYSELF
           </h1>
 
-          <p className="home-about-body">
+          <p className="info-body">
             I fell in love with programming and I have at least learnt
             something, I think… 🤷‍♂️
             <br />
@@ -102,7 +118,11 @@ const HomeAbout = () => {
 
             <br />
             <br />
+          </p>
+
+          <p>
             Apart from coding, some other activities that I love to do!
+          </p>
             <ul>
               <li className="about-activity">
                 <FaHandPointRight /> Writing Blogs on Medium 
@@ -114,7 +134,6 @@ const HomeAbout = () => {
                 <FaHandPointRight /> Travelling
               </li>
             </ul>
-          </p>
         </div>
       </section>
 
@@ -122,18 +141,24 @@ const HomeAbout = () => {
       <section className="contact-section">
         <h1>FIND ME ON</h1>
         <p>
-          Get in <span className="purple">touch </span>with me
+          Get in <span className="main-text">touch </span>with me
         </p>
         <div className="contact-icons">
-          <a href="mailto:your.email@example.com" target="_blank" rel="noopener noreferrer">
-            <MdEmail />
-          </a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-            <FaGithub />
-          </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
-          </a>
+          <div>
+            <a href="mailto:your.email@example.com" target="_blank" rel="noopener noreferrer">
+              <MdEmail />
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+          </div>
+          <div>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            < FaLinkedin />
+            </a>
+          </div>
         </div>
       </section>
     </div>

@@ -1,19 +1,55 @@
-/* General Page Styling */
 .skill-page {
   text-align: center;
-  padding: 40px;
-  background: #121212;
+  padding: 6.5em 40px;
+  background: #17152a;
   color: white;
-  padding-bottom: 10em;
+  padding-bottom: 12em;
 }
 
 /* Skills Grid */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
+  gap: 20px 60px;
   justify-items: center;
   padding: 20px;
+  width: 60%;
+  margin: 2em auto;
+  margin-bottom: 6rem;
+}
+@media screen and (min-width:1800px) {
+  .skills-grid{
+    width:1050px;
+  }
+}
+@media screen and (min-width:1000px) and (max-width:1200px) {
+  .skills-grid{
+    gap: 15px 45px;
+    width:700px;
+  }
+}
+@media screen and (max-width:1000px) {
+  .skills-grid{
+    gap: 10px 30px;
+    width: 80%;
+    margin-bottom: 5em;
+  }
+  .left-heading {
+    font-size: 2rem;
+    margin: 30px 0px 0px 30px;
+  }
+}
+@media screen and (max-width:500px) {
+  .skills-grid{
+    gap: 10px 15px;
+    width: 95%;
+    margin-top: 0.5em;
+    margin-bottom: 4em;
+  }
+  .left-heading {
+    font-size: 1.5rem;
+    margin: 10px 0px 0px 30px;
+  }
 }
 
 /* Dev Tools Section */
@@ -39,7 +75,8 @@
   border-block: 1px solid;
   user-select: none;
   display: flex;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   padding-top: 30px;
 
   --gap: 10px;
@@ -94,9 +131,11 @@
 @media screen and (max-width:600px) {
   .stock-ticker{
     font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
     --gap: 3px;
   }
   .stock-ticker ul{
     padding-left: 50px;
-  } 
+  }
 }
