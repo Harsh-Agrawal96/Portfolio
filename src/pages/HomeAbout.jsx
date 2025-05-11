@@ -1,12 +1,10 @@
-
 import React from "react";
 import "../public/css/Home.css";
-import homeLogo from "./first.svg";
-import otherlogo from "./second.svg";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { Typewriter } from 'react-simple-typewriter';
+import svg1 from "../Assets/homeFirstSvg.svg";
+import svg2 from "../Assets/homeSecondSvg.svg";
 import { FaHandPointRight } from "react-icons/fa";
+import AutoWriter from "../components/Home/AutoType";
+import SocialIcon from "../components/Home/ContactIconContainer";
 
 
 const HomeAbout = () => {
@@ -33,17 +31,7 @@ const HomeAbout = () => {
               A Software Developer
               <br />
               You can talk me about{' '}
-              <span style={{ color: "#64ffda", fontWeight: 'bold' }}>
-                <Typewriter
-                  words={['HTML', 'CSS', 'JavaScript', 'React']}
-                  loop={true}
-                  cursor
-                  cursorStyle='|'
-                  typeSpeed={80}
-                  deleteSpeed={60}
-                  delaySpeed={1000}
-                />
-              </span>
+              <AutoWriter />
             </h2>
           </div>
         </div>
@@ -53,7 +41,7 @@ const HomeAbout = () => {
           padding:"3%",
           }} >
           <div className="intro-innerdiv">
-            <img src={homeLogo} alt="Developer Illustration" />
+            <img src={svg1} alt="Developer Illustration" />
           </div>
         </div>
       </section>
@@ -65,7 +53,7 @@ const HomeAbout = () => {
           width:"35%"
           }} >
           <div className="info-innerdiv">
-            <img src={otherlogo} alt="Developer Illustration" />
+            <img src={svg2} alt="Developer Illustration" />
           </div>
         </div>
         <div className="info-text" style={{
@@ -73,7 +61,7 @@ const HomeAbout = () => {
         }} >
 
           <h1 style={{ fontSize: "2.6em" }}>
-            LET ME <span className="purple"> INTRODUCE </span> MYSELF
+            LET ME <span className="highlightColor1"> INTRODUCE </span> MYSELF
           </h1>
 
           <p className="info-body">
@@ -83,35 +71,22 @@ const HomeAbout = () => {
             <br />
             I am fluent in classics like
             <i>
-              <b className="purple"> C++, Javascript and MERN Stack. </b>
+              <b className="highlightColor1"> C++, Javascript and MERN Stack. </b>
             </i>
             <br />
             <br />
             My field of Interest's are building new &nbsp;
             <i>
-              <b className="purple">Web Technologies and Products </b> and
+              <b className="highlightColor1">Web Technologies and Products </b> and
               also interested in{" "}
-              <b className="purple">
+              <b className="highlightColor1">
                 Algorithms
               </b>
             </i>
             <br />
             <br />
-            Whenever possible, I also apply my passion for developing products
-            with <b className="purple">Node.js</b> and
-            <i>
-              <b className="purple"> {" "}
-                Modern Javascript Library and Frameworks
-              </b>
-            </i>
-              &nbsp; like
-            <i>
-              <b className="purple"> React.js</b>
-            </i>
-            <br />
-            <br />
-            Hi Everyone, I am <span className="purple">Arvind Sharma </span>
-            from <span className="purple"> Noida, India.</span>
+            Hi Everyone, I am <span className="highlightColor1">Arvind Sharma </span>
+            from <span className="highlightColor1"> Noida, India.</span>
             <br />
             I am currently pursuing my B.Tech in Computer Science from NIT Bhopal (2022-2026)
             <br />
@@ -124,13 +99,13 @@ const HomeAbout = () => {
             Apart from coding, some other activities that I love to do!
           </p>
             <ul>
-              <li className="about-activity">
+              <li>
                 <FaHandPointRight /> Writing Blogs on Medium 
               </li>
-              <li className="about-activity">
+              <li>
                 <FaHandPointRight /> Playing Games
               </li>
-              <li className="about-activity">
+              <li>
                 <FaHandPointRight /> Travelling
               </li>
             </ul>
@@ -143,26 +118,12 @@ const HomeAbout = () => {
         <p>
           Get in <span className="main-text">touch </span>with me
         </p>
-        <div className="contact-icons">
-          <div>
-            <a href="mailto:your.email@example.com" target="_blank" rel="noopener noreferrer">
-              <MdEmail />
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-              <FaGithub />
-            </a>
-          </div>
-          <div>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-            < FaLinkedin />
-            </a>
-          </div>
-        </div>
+        
+        <SocialIcon />
       </section>
     </div>
   )
 };
+
 
 export default HomeAbout;

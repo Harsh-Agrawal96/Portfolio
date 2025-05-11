@@ -1,0 +1,119 @@
+/* Footer Styles */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #232334;
+  padding: 15px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+  overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.footer-box {
+  display: flex;
+  background-color: #292943;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Icon Button Styles */
+.footer-box .icon-button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #b0b0c3;
+  position: relative;
+  margin: 0 25px;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s, border-color 0.3s;
+}
+
+.footer-box .icon-button:hover {
+  color: #00b4d8;
+  transform: scale(1.1);
+}
+
+.footer-box .icon-button.active {
+  color: #00b4d8;
+}
+
+.footer-box .icon-button.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background-color: #ff6f61;
+  animation: border-expand 0.3s forwards;
+}
+
+@keyframes border-expand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width:2000px) {
+  .footer-box {
+    padding: 20px 35px;
+    border-radius: 20px;
+  }
+  .footer-box .icon-button {
+    font-size: 35px;
+    margin: 0 30px;
+  }
+}
+
+@media screen and (min-width:2000px) {
+  .footer-box {
+    padding: 20px 35px;
+    border-radius: 20px;
+  }
+  .footer-box .icon-button {
+    font-size: 35px;
+    margin: 0 30px;
+  }
+}
+
+@media screen and (max-width:400px) and (max-width:800px) {
+  .footer {
+    padding: 10px 0;
+  }
+  .footer-box {
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .footer-box .icon-button {
+    font-size: 22px;
+    margin: 0 17px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .footer {
+    padding: 7px 0;
+  }
+  .footer-box {
+    padding: 7px 13px;
+    border-radius: 6px;
+  }
+  .footer-box .icon-button {
+    font-size: 15px;
+    margin: 0 12px;
+  }
+  .footer-box .icon-button.active::after {
+    bottom: -1px;
+    height: 1px;
+  }
+}

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaUser, FaBriefcase, FaProjectDiagram } from "react-icons/fa";
+import { SiHyperskill } from "react-icons/si";
 import './App.css'
+import './public/css/Footer.css';
 import HomeAbout from "./pages/HomeAbout";
 import ExperiencePage from "./pages/Experience";
 import ProjectPage from "./pages/Projects";
@@ -62,7 +64,7 @@ function App() {
             className={`icon-button ${currentPage === "skills" ? "active" : ""}`}
             onClick={() => handlePageChange("skills")}
           >
-            <FaProjectDiagram />
+            <SiHyperskill />
           </button>
           <button
             className={`icon-button ${currentPage === "projects" ? "active" : ""}`}

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../public/css/Navbar.css';
 
 import { CgGitFork } from "react-icons/cg";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/logo.jpeg";
 import { FaPhone } from "react-icons/fa6";
 import { AiFillStar } from "react-icons/ai";
 

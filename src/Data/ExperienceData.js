@@ -1,5 +1,5 @@
-import image1 from "../public/images/intern1.jpg"
-import image2 from "../public/images/intern2.jpg"
+import image1 from "../public/images/PlatExamIntern.jpg"
+import image2 from "../public/images/SafeGuardIntern.jpg"
 
 
 export const Experiences = [
