@@ -1,11 +1,16 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "../public/css/SkillPage.css";
 import IconContainer from "../components/skills/IconContainer";
 import Tools from "../components/skills/ToolIcon";
 
 
 const SkillPage = () => {
+
   const scrollRef = useRef(null);
+
+  useEffect(() => {
+    document.title = 'Skills | Harsh Agrawal Portfolio';
+  }, []);
 
   return (
     <div className="skill-page">

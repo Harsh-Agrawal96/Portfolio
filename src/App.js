@@ -11,7 +11,7 @@ import SkillPage from "./pages/Skills"
 import NavBar from "./components/Navbar";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("about");
+  const [currentPage, setCurrentPage] = useState("homeAbout");
 
   const renderPage = () => {
     switch (currentPage) {
@@ -50,7 +50,7 @@ function App() {
         <div className="footer-box">
           <button
             className={`icon-button ${currentPage === "homeAbout" ? "active" : ""}`}
-            onClick={() => handlePageChange("about")}
+            onClick={() => handlePageChange("homeAbout")}
           >
             <FaUser />
           </button>

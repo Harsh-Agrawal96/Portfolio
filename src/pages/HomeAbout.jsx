@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../public/css/Home.css";
 import svg1 from "../Assets/homeFirstSvg.svg";
 import svg2 from "../Assets/homeSecondSvg.svg";
@@ -8,6 +8,11 @@ import SocialIcon from "../components/Home/ContactIconContainer";
 
 
 const HomeAbout = () => {
+
+  useEffect(() => {
+    document.title = 'Harsh Agrawal | Portfolio';
+  }, []);
+
   return (
     <div className="home-about-container">
 
