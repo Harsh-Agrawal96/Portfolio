@@ -32,7 +32,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-logo">
         <a href="/">
-          <img src={logo}  />
+          <img src={logo} alt='Logo image' />
         </a>
       </div>
 

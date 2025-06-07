@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaUser, FaBriefcase, FaProjectDiagram } from "react-icons/fa";
 import { SiHyperskill } from "react-icons/si";
 import '../public/css/Footer.css';
