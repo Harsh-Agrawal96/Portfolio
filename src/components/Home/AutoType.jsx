@@ -12,6 +12,7 @@ const AutoWriter = () => {
 
             <Typewriter
               words={[
+                  'Java',
                   'HTML',
                   'CSS',
                   'JavaScript',

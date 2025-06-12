@@ -3,7 +3,7 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 
-const Link = (demoLink, repoLink) => {
+const Link = ({ demoLink, repoLink }) => {
 
     return (
         <div className="project-links">

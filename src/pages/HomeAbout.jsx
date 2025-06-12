@@ -70,45 +70,42 @@ const HomeAbout = () => {
           </h1>
 
           <p className="info-body">
-            I fell in love with programming and I have at least learnt
-            something, I think… 🤷‍♂️
+
             <br />
+            Hi, I am <span className="highlightColor1">Harsh Agrawal</span>
+            from <span className="highlightColor1"> Gwalior MP, India</span>
             <br />
-            I am fluent in classics like
-            <i>
-              <b className="highlightColor1"> C++, Javascript and MERN Stack. </b>
-            </i>
-            <br />
-            <br />
-            My field of Interest's are building new &nbsp;
-            <i>
-              <b className="highlightColor1">Web Technologies and Products </b> and
-              also interested in{" "}
-              <b className="highlightColor1">
-                Algorithms
-              </b>
-            </i>
-            <br />
-            <br />
-            Hi Everyone, I am <span className="highlightColor1">Arvind Sharma </span>
-            from <span className="highlightColor1"> Noida, India.</span>
             <br />
             I am currently pursuing my B.Tech in Computer Science from NIT Bhopal (2022-2026)
             <br />
-
             <br />
+            I discovered a passion for programming early on and have been steadily building my skills in
+            <i>
+              <b className="highlightColor1"> Java, JavaScript, and the MERN Stack. </b>
+            </i>
+            <br />
+            <br />
+            I enjoy exploring new 
+            <i>
+              <b className="highlightColor1"> Web technologies, improving my problem-solving abilities, </b> and
+              applying them in practical environments like{" "}
+              <b className="highlightColor1">
+                internship work and open-source contributions.
+              </b>
+            </i>
+
             <br />
           </p>
 
           <p>
-            Apart from coding, some other activities that I love to do!
+            Beyond coding, I like spending time on...
           </p>
             <ul>
               <li>
-                <FaHandPointRight /> Writing Blogs on Medium 
+                <FaHandPointRight /> Playing Games
               </li>
               <li>
-                <FaHandPointRight /> Playing Games
+                <FaHandPointRight /> Cooking
               </li>
               <li>
                 <FaHandPointRight /> Travelling

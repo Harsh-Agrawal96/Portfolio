@@ -1,30 +1,46 @@
-import image1 from "../public/images/flashcard.png"
-import image2 from "../public/images/doctorBooking.png"
+import flashcardImg from "../public/images/flashcard.png"
+import doctorProImg from "../public/images/doctorBooking.png"
+import chatproImg from "../public/images/chatPro.png";
 
 
 export const Projects = [
   {
     id: 1,
-    image: image1,
-    title: "Flashcard learning app",
+    image: flashcardImg,
+    title: "Flashcard learning Tool",
     description: [
-      "This is the first paragraph desaksfnfjlaskdfj lasdjfaisdljf iasjfd ailjwfi asndfiowaj fiawu9f sjioasdf noij cribing Project 1, highlighting its key features.",
-      "Here is the second paragraph explaining the challenges faced and solutions implemented.",
+      "An interactive flashcard learning platform supporting both multiple-choice and objective questions.",
+      "app includes complete admin control to add, update, or delete questoin cards, and enables efficient content management.",
+      "The main motive is to give enhanced learning experience with smooth user interaction and a clean, responsive UI for learners",
     ],
-    techStack: "React, Node.js, MongoDB",
-    liveLink: "https://example.com/live1",
-    repoLink: "https://github.com/example/repo1",
+    techStack: "NodeJS, ExpressJs, ReactJs, MongoDB",
+    liveLink: "https://flash-card-learning-tool-wvhm.vercel.app",
+    repoLink: "https://github.com/Harsh-Agrawal96/Flash-Card-Learning-Tool",
   },
   {
     id: 2,
-    image: image2,
-    title: "Project 2",
+    image: doctorProImg,
+    title: "Doctor Appointment Booking System",
     description: [
-      "Project 2 is focused on delivering unique functionalities to improve user experience.",
-      "This paragraph elaborates on how innovative approaches were applied in Project 2."
+      "A complete appointment booking system enabling patients to schedule booking with doctors and clinics, and features like booking approvals, cancellations, and detailed user profiles.",
+      "It has secure, role-based login and session handling to manage access for patients, doctors, and clinic admins.",
+      "It helps in reducing manual errors during process across the system.",
     ],
-    techStack: "Vue, Express, MySQL",
-    liveLink: "https://example.com/live2",
-    repoLink: "https://github.com/example/repo2",
-  }
+    techStack: "ExpressJs, HTML, CSS, Ejs, MongoDB, PassportJS",
+    liveLink: "https://doctor-appointment-booking-system-owfh.onrender.com",
+    repoLink: "https://github.com/Harsh-Agrawal96/doctor-Appointment-Booking-System",
+  },
+  {
+    id: 3,
+    image: chatproImg,
+    title: "ChatPro Chat App",
+    description: [
+      "A feature-rich chat application with real-time one-on-one and group messaging using WebSockets.",
+      "ChatPro includes core functionalities such as user authentication, live message updates, and group creation.",
+      "It support seamless communication for multiple concurrent users with a responsive UI.",
+    ],
+    techStack: "ExpressJs, ReactJs, Redux, MongoDB, Socket.IO",
+    liveLink: "https://chatpro-rosy.vercel.app",
+    repoLink: "https://github.com/Harsh-Agrawal96/ChatPro-Frontend",
+  },
 ];
